@@ -5,4 +5,5 @@ This repo contains sorted commands for psql command line to deal with Postgres d
 List of commands and sorting:
  - Help: General helping commands to know way through
  - Database: Commands to deal with database and getting started
- - Data: Coomands to deal with data in relation
+ - Data: Commands to deal with data in relation
+ - Functions: Functions in PSQL

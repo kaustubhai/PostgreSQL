@@ -3,6 +3,7 @@
 Command     | Action |
 ------------|--------|
 INSERT INTO `table_name` (`col_name`) VALUE (`value`) | Insert values for coloumns provided into given table |
+DELETE FROM `table_name` WHERE `query` = `value` | Delete rows where value exist in the query coloumn
 SELECT * FROM `table_name` | Show data onside given table |
 \i `'PATH/TO/myfile.sql'` | Import data from a file (mockaroo.com) |
 SELECT `query1`, `query2` from `table_name` | Displays all the value in the coloumn name as asked in the query
@@ -21,3 +22,8 @@ SELECT * FROM `table_name` WHERE `query1` ILIKE `'string_part'` | Gives rows whe
 SELECT * FROM `table_name` WHERE `query1` LIKE '%`string_part`' | Gives rows where value of coloumn ends with string_part
 SELECT * FROM `table_name` WHERE `query1` LIKE '`string_part`%' | Gives rows where value of coloumn starts with string_part
 SELECT `query1`, COUNT(*) FROM `table_name` GROUP BY `query1` | Gives count of rows in query1 with same value
+SELECT `query`, COUNT(*) FROM `table_name` GROUP BY `query` HAVING `query` = `'value'` | Gives count of rows in query only where value exist in query
+SELECT MIN/MAX/AVG/SUM(`query`) from `table_name` | Shows minimum, maximum, average or sum value in query coloumn
+SELECT `query` AS `alias_name` from `table_name` | Show alias as the coulomn name for the query
+SELECT COALESCE(`query`, `'Error Message'`) from `table_name` | Show values of the query couloumn and replace null values with the error message
+UPDATE `table_name` SET `query` = `value` WHERE `query1` = `value1` | Updates query's value to the value passwd in every row where the condition satisfies 
