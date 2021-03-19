@@ -2,7 +2,7 @@
 
 Command     | Action |
 ------------|--------|
-CREATE DATABASE `dbName`; | Create a database with provided name |
+CREATE DATABASE "`dbName`"; | Create a database with provided name |
 DROP DATABASE `dbName`; | Delete the database with provided name |
 CREATE TABLE `table_name` (`coloum_name data_type constraints`);  | Create table within selected database with defined coloumns and properties |
 CREATE TABLE `table_name` (`coloum_name data_type constraints`, `coloumn_name data_type` references `table2_name(table2_name.primary_key)`);  | Create table within selected database with defined coloumns and properties and a foreign key |
